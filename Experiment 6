@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+</head>
+
+<body style="font-family: Arial; background-color: #f0f8ff;">
+
+    <h1 align="center">Registration Form</h1>
+
+    <form onsubmit="return validateForm()">
+
+        <table align="center" cellpadding="10">
+
+            <tr>
+                <td>Name:</td>
+                <td>
+                    <input type="text" id="name"
+                           placeholder="Enter your name">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td>
+                    <input type="password" id="password"
+                           placeholder="Enter password">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+    <script>
+        function validateForm() {
+
+            let name = document.getElementById("name").value;
+            let password = document.getElementById("password").value;
+
+            if (name.trim() === "") {
+                alert("Please enter your name");
+                return false;
+            }
+
+            if (!/^[a-zA-Z ]+$/.test(name.trim())) {
+                alert("Name should contain only letters and spaces");
+                return false;
+            }
+
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long");
+                return false;
+            }
+
+            alert("Form submitted successfully!");
+            return false;
+        }
+    </script>
+
+</body>
+</html>
