@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Bookstore</title>
+</head>
+<body style="font-family: Arial; margin: 0;">
+
+    <div style="background: orange; padding: 15px; text-align: center;">
+        <h1>ONLINE BOOKSTORE</h1>
+        <p>Welcome to Our Book Store</p>
+    </div>
+
+    <div style="display: flex; min-height: 300px;">
+        <div style="background: lightyellow; padding: 15px; width: 25%;">
+            <h3>Categories</h3>
+            <p><a href="#home">Home</a></p>
+            <p><a href="#cse">CSE</a></p>
+            <p><a href="#ece">ECE</a></p>
+            <p><a href="#eee">EEE</a></p>
+            <p><a href="#civil">CIVIL</a></p>
+        </div>
+
+        <div style="background: lightblue; padding: 20px; flex: 1;">
+            <h2 id="home">Welcome to Online Bookstore</h2>
+            <p>Select your engineering branch to explore books.</p>
+            <h3 id="cse">CSE Books</h3>
+            <p>Programming, Data Structures and Algorithms</p>
+            <h3 id="ece">ECE Books</h3>
+            <p>Electronics and Communication Engineering</p>
+            <h3 id="eee">EEE Books</h3>
+            <p>Electrical Engineering Books</p>
+            <h3 id="civil">Civil Books</h3>
+            <p>Civil Engineering Books</p>
+        </div>
+    </div>
+
+</body>
+</html>
