@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart</title>
+</head>
+
+<body style="font-family: Arial;">
+
+    <h1 align="center">ONLINE BOOKSTORE</h1>
+    <h2 align="center">Shopping Cart</h2>
+
+    <table border="1" width="100%" cellpadding="12"
+           cellspacing="0">
+
+        <tr bgcolor="lightblue">
+            <th>Book Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Amount</th>
+        </tr>
+
+        <tr>
+            <td>Let Us C</td>
+            <td>Rs. 450</td>
+            <td>
+                <input type="number" id="q1"
+                       value="1" min="0"
+                       onchange="calculateTotal()">
+            </td>
+            <td id="a1">Rs. 450</td>
+        </tr>
+
+        <tr>
+            <td>Data Structures</td>
+            <td>Rs. 550</td>
+            <td>
+                <input type="number" id="q2"
+                       value="1" min="0"
+                       onchange="calculateTotal()">
+            </td>
+            <td id="a2">Rs. 550</td>
+        </tr>
+
+        <tr>
+            <td>Programming with Java</td>
+            <td>Rs. 600</td>
+            <td>
+                <input type="number" id="q3"
+                       value="1" min="0"
+                       onchange="calculateTotal()">
+            </td>
+            <td id="a3">Rs. 600</td>
+        </tr>
+
+        <tr bgcolor="lightyellow">
+            <th colspan="3" align="right">
+                Grand Total:
+            </th>
+            <th id="total">Rs. 1600</th>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <center>
+        <button onclick="alert('Proceeding to checkout!')">
+            Checkout
+        </button>
+    </center>
+
+    <script>
+        function calculateTotal() {
+            let p1 = 450;
+            let p2 = 550;
+            let p3 = 600;
+
+            let q1 = Math.max(0, parseInt(document.getElementById("q1").value) || 0);
+            let q2 = Math.max(0, parseInt(document.getElementById("q2").value) || 0);
+            let q3 = Math.max(0, parseInt(document.getElementById("q3").value) || 0);
+
+            let a1 = p1 * q1;
+            let a2 = p2 * q2;
+            let a3 = p3 * q3;
+
+            document.getElementById("a1").innerHTML = "Rs. " + a1;
+            document.getElementById("a2").innerHTML = "Rs. " + a2;
+            document.getElementById("a3").innerHTML = "Rs. " + a3;
+
+            let total = a1 + a2 + a3;
+
+            document.getElementById("total").innerHTML =
+                "Rs. " + total;
+        }
+    </script>
+
+</body>
+</html>
