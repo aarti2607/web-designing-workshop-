@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Catalogue</title>
+</head>
+
+<body style="font-family: Arial;">
+
+    <h1 align="center">ONLINE BOOKSTORE</h1>
+    <h2 align="center">Book Catalogue</h2>
+
+    <table border="1" width="100%" cellpadding="10"
+           cellspacing="0">
+
+        <tr bgcolor="lightblue">
+            <th>Book Image</th>
+            <th>Book Details</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+
+        <tr>
+            <td align="center">
+                <img src="https://placehold.co/100x130?text=C"
+                     alt="C Programming Book" width="100">
+            </td>
+            <td>
+                <b>Let Us C</b><br>
+                Author: Yashavant Kanetkar<br>
+                Publisher: BPB Publications
+            </td>
+            <td>Rs. 450</td>
+            <td>
+                <button onclick="alert('Let Us C added to cart!')">
+                    Add to Cart
+                </button>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center">
+                <img src="https://placehold.co/100x130?text=DSA"
+                     alt="Data Structures Book" width="100">
+            </td>
+            <td>
+                <b>Data Structures</b><br>
+                Author: Seymour Lipschutz<br>
+                Publisher: McGraw Hill
+            </td>
+            <td>Rs. 550</td>
+            <td>
+                <button onclick="alert('Data Structures added to cart!')">
+                    Add to Cart
+                </button>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center">
+                <img src="https://placehold.co/100x130?text=Java"
+                     alt="Java Programming Book" width="100">
+            </td>
+            <td>
+                <b>Programming with Java</b><br>
+                Author: E. Balagurusamy<br>
+                Publisher: McGraw Hill
+            </td>
+            <td>Rs. 600</td>
+            <td>
+                <button onclick="alert('Java Book added to cart!')">
+                    Add to Cart
+                </button>
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
