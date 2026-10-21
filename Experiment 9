@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Background and Link States</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightyellow;
+            padding: 20px;
+        }
+
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        .background-box {
+            height: 180px;
+            border: 2px solid black;
+            padding: 10px;
+
+            background-image:
+                url("https://www.transparenttextures.com/patterns/cubes.png");
+
+            background-repeat: repeat;
+        }
+
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Background and Link States</h1>
+
+    <h2>Background Repeat Example</h2>
+
+    <div class="background-box">
+        This box demonstrates the background-repeat property.
+    </div>
+
+    <h2>Different Link States</h2>
+
+    <p><a href="https://www.google.com">Visit Google</a></p>
+
+    <p><a href="https://www.wikipedia.org">Visit Wikipedia</a></p>
+
+    <p>Hover over a link to see its color change.</p>
+
+</body>
+</html>
