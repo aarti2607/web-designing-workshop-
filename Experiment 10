@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f5ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #243b67;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        nav {
+            background-color: #172747;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        section {
+            background-color: white;
+            margin: 20px auto;
+            padding: 25px;
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #243b67;
+        }
+
+        .project {
+            background-color: #e8edff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #243b67;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Hello! I am a Computer Science Student</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a Computer Science student interested in
+            programming, web development and technology.
+            I enjoy learning new skills and solving problems.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>C Programming</li>
+            <li>C++ Programming</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project">
+            <h3>Student Expense Tracker</h3>
+            <p>A project to record and manage student expenses.</p>
+        </div>
+
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>A personal website displaying my skills and projects.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: chaudharyaarti307@gmail.com</p>
+        <p>Location: Greater Noida, India</p>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2026 My Portfolio</p>
+    </footer>
+
+</body>
+</html>
